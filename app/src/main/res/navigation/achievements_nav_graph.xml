@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/achievements_nav_graph"
+    app:startDestination="@+id/achievements">
+
+    <fragment
+        android:id="@+id/achievements"
+        android:name="araikovich.inc.bekind.ui.AchievementsFragment"
+        android:label="achievementsFragment" />
+</navigation>
