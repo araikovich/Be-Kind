@@ -36,6 +36,7 @@ class HomeScreenFetchDataUseCase(private val repository: TasksRepository) {
     }
 
     private fun areDateSameCurrent(date: String): Boolean {
+        if (date.isEmpty()) return false
         val sdf = SimpleDateFormat("yyy-MM-dd", Locale.getDefault())
         val cal1 = Calendar.getInstance()
         val cal2 = Calendar.getInstance()
